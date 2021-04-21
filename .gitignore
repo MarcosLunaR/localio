@@ -18,3 +18,7 @@ test/version_tmp
 tmp
 .idea/
 testing/
+bin/.localio.yml
+bin/Locfile
+bin/i18n/strings-en.json
+bin/i18n/strings-es.json
