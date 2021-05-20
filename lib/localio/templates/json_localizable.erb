@@ -3,7 +3,7 @@
         "info": "Localizable created with localio. DO NOT MODIFY.",
         "language": "<%= @language %>"
     },
-    "translations": {
+    <%# "translations": { %>
 <%   @segments.each.with_index do |term, index|
          term_value = term.translation
          term_key = term.key
@@ -12,5 +12,5 @@
         if term.key == '[init-node]'%>  
     "<%= term_value %>": {<% elsif term.key == '[end-node]'%>}<% unless term == @segments.last %>,<% end %><% else %>
     "<%= term_key %>": "<%= term_value %>"<% unless term == @segments.last %>,<% end %><% end end %>
-    }
+    <%# } %>
 }

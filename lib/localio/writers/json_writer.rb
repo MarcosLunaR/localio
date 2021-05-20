@@ -21,7 +21,8 @@ class JsonWriter
         segments.segments << segment
       end
 
-      TemplateHandler.process_template 'json_localizable.erb', output_path, "strings-#{lang}.json", segments
+      # TemplateHandler.process_template 'json_localizable.erb', output_path, "strings-#{lang}.json", segments
+      TemplateHandler.process_template 'json_localizable.erb', output_path, "#{lang}.json", segments
       puts " > #{lang.yellow}"
     end
   end
